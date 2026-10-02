@@ -57,3 +57,35 @@ document.querySelectorAll('.faq-question').forEach(button => {
         }
     });
 });
+// ===== First Visit Enquiry Popup =====
+(function () {
+    const overlay = document.getElementById('enquiryOverlay');
+    const closeBtn = document.getElementById('enquiryClose');
+
+    // Show only on first visit
+    if (!localStorage.getItem('enquiryShown')) {
+        // Small delay so page loads first
+        setTimeout(() => {
+            overlay.classList.add('active');
+        }, 1200);
+    }
+
+    // Close button
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('active');
+        localStorage.setItem('enquiryShown', 'true');
+    });
+
+    // Close when clicking outside the modal
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+            localStorage.setItem('enquiryShown', 'true');
+        }
+    });
+
+    // After form submit, mark as shown
+    document.getElementById('enquiryForm').addEventListener('submit', () => {
+        localStorage.setItem('enquiryShown', 'true');
+    });
+})();
