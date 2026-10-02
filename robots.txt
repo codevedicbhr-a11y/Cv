@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://codevedicbhr-a11y.github.io./Cv/sitemap.xml
+Sitemap: https://www.codevedic.in/sitemap.xml
