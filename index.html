@@ -467,6 +467,49 @@
    aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
 </a>
+    <!-- First Visit Enquiry Popup -->
+<div class="enquiry-overlay" id="enquiryOverlay">
+    <div class="enquiry-modal">
+        <button class="enquiry-close" id="enquiryClose" aria-label="Close">&times;</button>
+        <div class="enquiry-header">
+            <h3>Welcome to Code Vedic!</h3>
+            <p>Tell us how we can help you</p>
+        </div>
+        <form action="https://formsubmit.co/codevedicbhr@gmail.com" method="POST" id="enquiryForm">
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_subject" value="New Website Enquiry - Code Vedic">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://www.codevedic.in/?thanks=1">
+
+            <div class="enquiry-group">
+                <label for="enqName">Your Name *</label>
+                <input type="text" id="enqName" name="Name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="enquiry-group">
+                <label for="enqPhone">Contact Number *</label>
+                <input type="tel" id="enqPhone" name="Contact Number" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="enquiry-group">
+                <label for="enqService">Looking for *</label>
+                <select id="enqService" name="Looking For" required>
+                    <option value="">Select a service</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="SEO & SMO">SEO & Social Media Optimization</option>
+                    <option value="IT Training">IT Training</option>
+                    <option value="Other">Other / General Enquiry</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary enquiry-btn">
+                <i class="fas fa-paper-plane"></i> Submit Enquiry
+            </button>
+        </form>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
