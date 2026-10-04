@@ -89,3 +89,40 @@ document.querySelectorAll('.faq-question').forEach(button => {
         localStorage.setItem('enquiryShown', 'true');
     });
 })();
+// ===== Chat Agent =====
+(function () {
+    const toggle = document.getElementById('chatToggle');
+    const windowEl = document.getElementById('chatWindow');
+    const closeBtn = document.getElementById('chatClose');
+    const badge = document.getElementById('chatBadge');
+
+    // Open / Close
+    toggle.addEventListener('click', () => {
+        windowEl.classList.toggle('open');
+        badge.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        windowEl.classList.remove('open');
+    });
+
+    // Multi-step form
+    document.querySelectorAll('.chat-next').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const currentStep = btn.closest('.chat-form-step');
+            const nextId = btn.getAttribute('data-next');
+            const nextStep = document.getElementById(nextId);
+
+            // Simple validation
+            const input = currentStep.querySelector('input, select, textarea');
+            if (input && !input.value.trim()) {
+                input.focus();
+                input.style.borderColor = '#EF4444';
+                return;
+            }
+
+            currentStep.style.display = 'none';
+            nextStep.style.display = 'block';
+        });
+    });
+})();
