@@ -513,6 +513,74 @@
         </form>
     </div>
 </div>
+    <!-- Chat Agent Widget -->
+<div class="chat-agent">
+    <!-- Floating Button -->
+    <button class="chat-toggle" id="chatToggle" aria-label="Open chat">
+        <i class="fas fa-comments"></i>
+        <span class="chat-badge" id="chatBadge">1</span>
+    </button>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div>
+                    <strong>Code Vedic Assistant</strong>
+                    <span class="chat-status">Online</span>
+                </div>
+            </div>
+            <button class="chat-close" id="chatClose">&times;</button>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="chat-msg bot">
+                <p>Hi! 👋 Welcome to <strong>Code Vedic IT Solutions</strong>.</p>
+                <p>Please share a few details so we can help you better.</p>
+            </div>
+        </div>
+
+        <form class="chat-form" id="chatForm" action="https://formsubmit.co/codevedicbhr@gmail.com" method="POST">
+            <!-- FormSubmit settings -->
+            <input type="hidden" name="_subject" value="New Chat Enquiry - Code Vedic">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://www.codevedic.in/?chat=thanks">
+
+            <div class="chat-form-step" id="step1">
+                <input type="text" name="Name" placeholder="Your Name *" required>
+                <button type="button" class="chat-next" data-next="step2">Next →</button>
+            </div>
+
+            <div class="chat-form-step" id="step2" style="display:none;">
+                <input type="tel" name="Contact Number" placeholder="Phone Number *" required>
+                <button type="button" class="chat-next" data-next="step3">Next →</button>
+            </div>
+
+            <div class="chat-form-step" id="step3" style="display:none;">
+                <select name="Looking For" required>
+                    <option value="">Select Service *</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="Mobile App Development">Mobile App Development</option>
+                    <option value="SEO & SMO">SEO & Social Media</option>
+                    <option value="IT Training">IT Training</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="button" class="chat-next" data-next="step4">Next →</button>
+            </div>
+
+            <div class="chat-form-step" id="step4" style="display:none;">
+                <textarea name="Message" rows="3" placeholder="Tell us more about your requirement..." required></textarea>
+                <button type="submit" class="chat-submit">
+                    <i class="fas fa-paper-plane"></i> Send Enquiry
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
