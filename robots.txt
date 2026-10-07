@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemaps
-Sitemap: https://www.codevedic.in/sitemap.xml
-
-# Crawl-delay is optional; Google ignores it
-User-agent: Googlebot
-Allow: /
