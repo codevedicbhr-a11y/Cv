@@ -1,0 +1,128 @@
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Mobile menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+    const scrollY = window.pageYOffset;
+    sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector('.nav-links a[href="#' + sectionId + '"]');
+        if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLink.classList.add('active');
+            } else {
+                navLink.classList.remove('active');
+            }
+        }
+    });
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            faq.classList.remove('active');
+        });
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+// ===== First Visit Enquiry Popup =====
+(function () {
+    const overlay = document.getElementById('enquiryOverlay');
+    const closeBtn = document.getElementById('enquiryClose');
+
+    // Show only on first visit
+    if (!localStorage.getItem('enquiryShown')) {
+        // Small delay so page loads first
+        setTimeout(() => {
+            overlay.classList.add('active');
+        }, 1200);
+    }
+
+    // Close button
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('active');
+        localStorage.setItem('enquiryShown', 'true');
+    });
+
+    // Close when clicking outside the modal
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('active');
+            localStorage.setItem('enquiryShown', 'true');
+        }
+    });
+
+    // After form submit, mark as shown
+    document.getElementById('enquiryForm').addEventListener('submit', () => {
+        localStorage.setItem('enquiryShown', 'true');
+    });
+})();
+// ===== Chat Agent =====
+(function () {
+    const toggle = document.getElementById('chatToggle');
+    const windowEl = document.getElementById('chatWindow');
+    const closeBtn = document.getElementById('chatClose');
+    const badge = document.getElementById('chatBadge');
+
+    // Open / Close
+    toggle.addEventListener('click', () => {
+        windowEl.classList.toggle('open');
+        badge.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        windowEl.classList.remove('open');
+    });
+
+    // Multi-step form
+    document.querySelectorAll('.chat-next').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const currentStep = btn.closest('.chat-form-step');
+            const nextId = btn.getAttribute('data-next');
+            const nextStep = document.getElementById(nextId);
+
+            // Simple validation
+            const input = currentStep.querySelector('input, select, textarea');
+            if (input && !input.value.trim()) {
+                input.focus();
+                input.style.borderColor = '#EF4444';
+                return;
+            }
+
+            currentStep.style.display = 'none';
+            nextStep.style.display = 'block';
+        });
+    });
+})();
