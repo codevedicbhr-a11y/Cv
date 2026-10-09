@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog of Code Vedic IT Solutions – Tips on website development, mobile apps, SEO, digital marketing and IT training.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Code Vedic IT Solutions">
+    <link rel="canonical" href="https://www.codevedic.in/blog.html">
+    <meta property="og:title" content="Blog | Code Vedic IT Solutions">
+    <meta property="og:description" content="Tips and insights on web development, apps, SEO and IT training from Code Vedic.">
+    <meta property="og:url" content="https://www.codevedic.in/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Code Vedic IT Solutions">
+    <meta property="og:image" content="https://www.codevedic.in/logo.png">
+    <title>Blog | Code Vedic IT Solutions</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Code Vedic IT Solutions Logo">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#process">Process</a></li>
+                <li><a href="index.html#why-us">Why Us</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="policy-hero">
+        <div class="container">
+            <div class="policy-breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Blog</span>
+            </div>
+            <h1>Our Blog</h1>
+            <p>Insights, tips &amp; updates on web, apps, SEO and IT training</p>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <!-- 
+                ============================================
+                HOW TO ADD A NEW BLOG POST:
+                1. Copy one full <article class="blog-card"> ... </article> block below
+                2. Paste it at the TOP of the blog-grid (newest first)
+                3. Change the title, date, category, excerpt and the href of "Read more"
+                4. Optionally create a new HTML file (e.g. blog-post-3.html) for the full article
+                   and link to it, OR keep the full content inside the card for now.
+                ============================================
+            -->
+            <div class="blog-grid">
+
+                <!-- ========== BLOG POST 1 (newest) ========== -->
+                <article class="blog-card">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Web Development</span>
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> Oct 8, 2026</span>
+                    </div>
+                    <h2 class="blog-card-title">
+                        <a href="#post-1">Why Every Small Business Needs a Professional Website in 2026</a>
+                    </h2>
+                    <p class="blog-card-excerpt">
+                        A strong online presence is no longer optional. Learn how a well-designed website helps local businesses in Bihar attract more customers, build trust, and grow revenue.
+                    </p>
+                    <a href="#post-1" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <!-- ========== BLOG POST 2 ========== -->
+                <article class="blog-card">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">SEO</span>
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> Oct 5, 2026</span>
+                    </div>
+                    <h2 class="blog-card-title">
+                        <a href="#post-2">5 Simple SEO Tips to Rank Higher on Google</a>
+                    </h2>
+                    <p class="blog-card-excerpt">
+                        You don’t need a big budget to improve your search rankings. These practical SEO practices can help your website appear in front of the right audience.
+                    </p>
+                    <a href="#post-2" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <!-- ========== BLOG POST 3 ========== -->
+                <article class="blog-card">
+                    <div class="blog-card-meta">
+                        <span class="blog-category">Mobile Apps</span>
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> Sep 28, 2026</span>
+                    </div>
+                    <h2 class="blog-card-title">
+                        <a href="#post-3">Flutter vs Native: Which Should You Choose for Your App?</a>
+                    </h2>
+                    <p class="blog-card-excerpt">
+                        Choosing the right technology for your mobile app can save time and money. Here’s a clear comparison to help you decide.
+                    </p>
+                    <a href="#post-3" class="blog-read-more">Read more <i class="fas fa-arrow-right"></i></a>
+                </article>
+
+                <!-- 
+                    ========== ADD NEW BLOG POST HERE ==========
+                    Copy the block above and paste below this comment.
+                    Update title, date, category, excerpt and link.
+                -->
+
+            </div>
+
+            <!-- Full post content sections (expandable / for anchor links) -->
+            <div class="blog-posts-full">
+
+                <article id="post-1" class="blog-full-post">
+                    <div class="blog-full-meta">
+                        <span class="blog-category">Web Development</span>
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> Oct 8, 2026</span>
+                    </div>
+                    <h2>Why Every Small Business Needs a Professional Website in 2026</h2>
+                    <div class="blog-full-body">
+                        <p>In today’s digital world, customers look online first. Whether you run a shop, clinic, coaching centre or service business in Bihar, a professional website acts as your 24/7 storefront.</p>
+                        <p>A good website builds trust, showcases your services, and makes it easy for people to contact you. Combined with basic SEO and WhatsApp integration, it can bring real enquiries every month.</p>
+                        <p>At Code Vedic IT Solutions we help local businesses launch clean, mobile-friendly websites that are easy to manage and affordable. If you are ready to go online, <a href="index.html#contact">get in touch</a> for a free discussion.</p>
+                    </div>
+                    <a href="blog.html" class="blog-back">← Back to all posts</a>
+                </article>
+
+                <article id="post-2" class="blog-full-post">
+                    <div class="blog-full-meta">
+                        <span class="blog-category">SEO</span>
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> Oct 5, 2026</span>
+                    </div>
+                    <h2>5 Simple SEO Tips to Rank Higher on Google</h2>
+                    <div class="blog-full-body">
+                        <p>Search Engine Optimisation does not have to be complicated. Start with these five practical steps:</p>
+                        <ol>
+                            <li><strong>Use clear page titles and headings</strong> that include the words people actually search for.</li>
+                            <li><strong>Write helpful content</strong> that answers real questions instead of stuffing keywords.</li>
+                            <li><strong>Make your site mobile-friendly and fast</strong> — Google rewards sites that load quickly on phones.</li>
+                            <li><strong>Add your business to Google Business Profile</strong> so local customers can find you on Maps.</li>
+                            <li><strong>Get a few quality backlinks</strong> from local directories, partners or news sites.</li>
+                        </ol>
+                        <p>Need help implementing SEO for your website? <a href="index.html#contact">Contact Code Vedic</a> — we offer practical SEO packages for small businesses.</p>
+                    </div>
+                    <a href="blog.html" class="blog-back">← Back to all posts</a>
+                </article>
+
+                <article id="post-3" class="blog-full-post">
+                    <div class="blog-full-meta">
+                        <span class="blog-category">Mobile Apps</span>
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> Sep 28, 2026</span>
+                    </div>
+                    <h2>Flutter vs Native: Which Should You Choose for Your App?</h2>
+                    <div class="blog-full-body">
+                        <p><strong>Native apps</strong> (Swift for iOS, Kotlin for Android) give the best performance and deepest device integration, but you need two separate codebases — higher cost and longer timelines.</p>
+                        <p><strong>Flutter</strong> lets you build one app that runs on both Android and iOS from a single codebase. It is fast to develop, looks modern, and is excellent for most business apps, marketplaces and internal tools.</p>
+                        <p>For the majority of startups and SMEs, Flutter offers the best balance of speed, cost and quality. We specialise in Flutter development at Code Vedic and can guide you based on your exact requirements.</p>
+                        <p><a href="index.html#contact">Talk to us</a> about your app idea.</p>
+                    </div>
+                    <a href="blog.html" class="blog-back">← Back to all posts</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Code Vedic IT Solutions" class="footer-logo">
+                    <p>Building digital solutions that empower businesses and individuals. Website development, mobile apps, SEO, SMO &amp; IT training.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@codevedic.in">info@codevedic.in</a></li>
+                        <li><a href="tel:+918893891603">+91 88938 91603</a></li>
+                        <li>Mon – Sat: 9 AM – 7 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Code Vedic IT Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/918893891603" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
