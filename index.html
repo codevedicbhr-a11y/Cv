@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Code Vedic IT Solutions – Premium Website Development, Mobile Apps, SEO, SMO & IT Training in Bihar, India. Modern digital solutions that grow your business.">
+    <meta name="keywords" content="website development, mobile app development, SEO services, SMO, IT training, web design Bihar, Code Vedic, digital marketing, Flutter, React, WordPress">
+    <meta name="author" content="Code Vedic IT Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.codevedic.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.codevedic.in/">
+    <meta property="og:title" content="Code Vedic IT Solutions | Website & App Development | SEO & Training">
+    <meta property="og:description" content="Expert website development, mobile apps, SEO, SMO & professional IT training. Transform your ideas into digital excellence.">
+    <meta property="og:image" content="https://www.codevedic.in/images/logo.png">
+    <meta property="og:site_name" content="Code Vedic IT Solutions">
+    <title>Code Vedic IT Solutions | Premium Website & App Development</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <img src="images/logo.png" alt="Code Vedic IT Solutions" class="logo-img">
+                <span class="logo-text">Code Vedic</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-badge animate-in" data-delay="0">
+                <span class="pulse-dot"></span>
+                Welcome to Code Vedic IT Solutions
+            </div>
+            <h1 class="hero-title animate-in" data-delay="100">
+                Transforming Ideas into<br>
+                <span class="gradient-text">Digital Excellence</span>
+            </h1>
+            <p class="hero-subtitle animate-in" data-delay="200">
+                We craft powerful websites, mobile applications, and digital marketing strategies that help businesses grow. Expert IT training included to empower the next generation of tech talent.
+            </p>
+            <div class="hero-btns animate-in" data-delay="300">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get Started Free</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#services" class="btn btn-outline">
+                    <span>Explore Services</span>
+                </a>
+            </div>
+            <div class="hero-stats animate-in" data-delay="400">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-label">% Client Focused</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="4">0</div>
+                    <div class="stat-label">Core Services</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">/7 Support</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><div class="mouse"><div class="wheel"></div></div></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About <span class="gradient-text">Code Vedic</span></h2>
+                <p class="section-desc">Building the future of digital experiences with passion and precision</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-visual" data-aos="fade-right">
+                    <div class="about-card glass">
+                        <div class="about-icon-wrap">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>Help businesses establish a strong online presence and empower individuals through professional IT training.</p>
+                    </div>
+                    <div class="about-card glass floating">
+                        <div class="about-icon-wrap cyan">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>Become the most trusted digital partner for businesses across Bihar and beyond.</p>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Building the Future of Digital Experiences</h3>
+                    <p>Code Vedic IT Solutions is a passionate technology company dedicated to delivering high-quality digital solutions. We specialize in building modern websites, powerful mobile applications, and effective digital marketing strategies that drive real results for businesses of every size.</p>
+                    <p>With a focus on clean code, user-centric design, and measurable outcomes, we turn your vision into reality — whether you need a brand-new website, a mobile app, SEO growth, or professional training.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Modern & Responsive Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean & Scalable Code</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Result-Driven Approach</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Affordable & Transparent Pricing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
+                <p class="section-desc">Comprehensive digital solutions tailored to grow your business</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in" data-delay="0">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Custom, responsive, and high-performance websites that convert visitors into customers. From landing pages to full business platforms.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-angle-right"></i> Business & Corporate Websites</li>
+                        <li><i class="fas fa-angle-right"></i> E-commerce Stores</li>
+                        <li><i class="fas fa-angle-right"></i> Landing Pages & Portfolios</li>
+                        <li><i class="fas fa-angle-right"></i> WordPress / Custom Builds</li>
+                        <li><i class="fas fa-angle-right"></i> Speed & SEO Optimized</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Native and cross-platform mobile applications built with modern frameworks for Android & iOS that users love.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-angle-right"></i> Flutter & React Native</li>
+                        <li><i class="fas fa-angle-right"></i> Android & iOS Apps</li>
+                        <li><i class="fas fa-angle-right"></i> UI/UX Design</li>
+                        <li><i class="fas fa-angle-right"></i> API Integration</li>
+                        <li><i class="fas fa-angle-right"></i> App Store Publishing</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3>SEO & Social Media</h3>
+                    <p>Boost your online visibility and brand presence. Rank higher on Google and grow organically with proven strategies.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-angle-right"></i> On-Page & Off-Page SEO</li>
+                        <li><i class="fas fa-angle-right"></i> Keyword Research</li>
+                        <li><i class="fas fa-angle-right"></i> Social Media Management</li>
+                        <li><i class="fas fa-angle-right"></i> Content Strategy</li>
+                        <li><i class="fas fa-angle-right"></i> Analytics & Reports</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>IT Training</h3>
+                    <p>Practical, industry-oriented training programs designed to build real-world skills from beginner to advanced levels.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-angle-right"></i> Web Development (HTML to React)</li>
+                        <li><i class="fas fa-angle-right"></i> Mobile App Development</li>
+                        <li><i class="fas fa-angle-right"></i> Digital Marketing & SEO</li>
+                        <li><i class="fas fa-angle-right"></i> Hands-on Projects</li>
+                        <li><i class="fas fa-angle-right"></i> Portfolio Building</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How We Work</span>
+                <h2 class="section-title">Our Simple <span class="gradient-text">Process</span></h2>
+                <p class="section-desc">A clear, transparent workflow so you always know what’s happening</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-up" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Discussion</h3>
+                        <p>We start by understanding your goals, target audience, and requirements through a free consultation call or WhatsApp message.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Planning & Proposal</h3>
+                        <p>We create a detailed plan, timeline, and transparent quote so you know exactly what you’ll get and when.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design & Development</h3>
+                        <p>Our team designs and builds your project with regular updates. You stay in the loop every step of the way.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-up" data-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Launch & Support</h3>
+                        <p>We launch your project, train you if needed, and provide ongoing support so everything keeps running smoothly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">Why <span class="gradient-text">Code Vedic</span>?</h2>
+                <p class="section-desc">What makes us different and the right partner for your digital journey</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card" data-aos="flip-left" data-delay="0">
+                    <div class="why-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Fast Delivery</h3>
+                    <p>We respect deadlines and deliver quality work on time without compromising standards.</p>
+                </div>
+                <div class="why-card" data-aos="flip-left" data-delay="100">
+                    <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium quality at honest, transparent prices designed for startups and growing businesses.</p>
+                </div>
+                <div class="why-card" data-aos="flip-left" data-delay="200">
+                    <div class="why-icon"><i class="fas fa-headset"></i></div>
+                    <h3>Local Support</h3>
+                    <p>Based in Bihar — call, WhatsApp or meet us. Real people, real communication, zero delay.</p>
+                </div>
+                <div class="why-card" data-aos="flip-left" data-delay="300">
+                    <div class="why-icon"><i class="fas fa-code"></i></div>
+                    <h3>Modern Tech</h3>
+                    <p>We use the latest technologies and best practices so your product stays future-ready.</p>
+                </div>
+                <div class="why-card" data-aos="flip-left" data-delay="400">
+                    <div class="why-icon"><i class="fas fa-users"></i></div>
+                    <h3>Client Focused</h3>
+                    <p>Your success is our success. We listen carefully and build exactly what you need.</p>
+                </div>
+                <div class="why-card" data-aos="flip-left" data-delay="500">
+                    <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>Clean code, thorough testing, and post-launch support included with every project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Got Questions?</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>How long does it take to build a website?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A simple business website usually takes 7–14 days. Complex or e-commerce sites may take 3–6 weeks depending on features and content readiness. We’ll give you a clear timeline after our free consultation.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Do you provide website maintenance after launch?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We offer flexible maintenance packages that include updates, security, backups, and content changes so your site stays fast, secure and up-to-date.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Can I get a mobile app for both Android and iOS?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We build cross-platform apps using Flutter or React Native so you get both Android and iOS apps from a single codebase — saving time and cost.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Is the free consultation really free?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, 100% free and no obligation. We discuss your goals, answer questions, and share honest recommendations. You decide if you want to proceed.</p>
+                    </div>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Do you offer training for beginners?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Our IT training programs start from absolute beginner level and go up to advanced. We focus on practical projects so you build a real portfolio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let’s Build Something <span class="gradient-text">Amazing</span></h2>
+                <p class="section-desc">Tell us about your project. We’ll get back within 24 hours.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card glass">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+918893891603">+91 88938 91603</a>
+                        </div>
+                    </div>
+                    <div class="info-card glass">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@codevedic.in">info@codevedic.in</a>
+                        </div>
+                    </div>
+                    <div class="info-card glass">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Bihar, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/codevedicIT/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/codevedicit/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/918893891603" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass" id="contactForm" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your email (optional)">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="website">Website Development</option>
+                            <option value="app">Mobile App Development</option>
+                            <option value="seo">SEO & SMO</option>
+                            <option value="training">IT Training</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <img src="images/logo.png" alt="Code Vedic" class="logo-img">
+                        <span class="logo-text">Code Vedic</span>
+                    </a>
+                    <p>Transforming ideas into digital excellence. Professional website development, mobile apps, SEO & IT training.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">SEO & SMO</a></li>
+                        <li><a href="#services">IT Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+918893891603"><i class="fas fa-phone"></i> +91 88938 91603</a></li>
+                        <li><a href="mailto:info@codevedic.in"><i class="fas fa-envelope"></i> info@codevedic.in</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Bihar, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Code Vedic IT Solutions. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="refund.html">Refund Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918893891603" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+    <!-- First Visit Enquiry Popup -->
+    <div class="enquiry-overlay" id="enquiryOverlay">
+        <div class="enquiry-modal">
+            <button class="enquiry-close" id="enquiryClose" aria-label="Close">&times;</button>
+            <div class="enquiry-header">
+                <div class="enquiry-icon"><i class="fas fa-hand-sparkles"></i></div>
+                <h3>Welcome to Code Vedic!</h3>
+                <p>Tell us how we can help you — free consultation</p>
+            </div>
+            <form action="https://formsubmit.co/codevedicbhr@gmail.com" method="POST" id="enquiryForm">
+                <input type="hidden" name="_subject" value="New Website Enquiry - Code Vedic">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://www.codevedic.in/?thanks=1">
+
+                <div class="enquiry-group">
+                    <label for="enqName">Your Name *</label>
+                    <input type="text" id="enqName" name="Name" placeholder="Enter your full name" required>
+                </div>
+                <div class="enquiry-group">
+                    <label for="enqPhone">Contact Number *</label>
+                    <input type="tel" id="enqPhone" name="Contact Number" placeholder="Enter your phone number" required>
+                </div>
+                <div class="enquiry-group">
+                    <label for="enqService">Looking for *</label>
+                    <select id="enqService" name="Looking For" required>
+                        <option value="">Select a service</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="SEO & SMO">SEO & Social Media Optimization</option>
+                        <option value="IT Training">IT Training</option>
+                        <option value="Other">Other / General Enquiry</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary enquiry-btn">
+                    <i class="fas fa-paper-plane"></i> Submit Enquiry
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Agent Widget -->
+    <div class="chat-agent">
+        <button class="chat-toggle" id="chatToggle" aria-label="Open chat">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="chatBadge">1</span>
+        </button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <strong>Code Vedic Assistant</strong>
+                        <span class="chat-status">● Online</span>
+                    </div>
+                </div>
+                <button class="chat-close" id="chatClose">&times;</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-msg bot">
+                    <p>Hi! 👋 Welcome to <strong>Code Vedic IT Solutions</strong>.</p>
+                    <p>Please share a few details so we can help you better.</p>
+                </div>
+            </div>
+            <form class="chat-form" id="chatForm" action="https://formsubmit.co/codevedicbhr@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New Chat Enquiry - Code Vedic">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://www.codevedic.in/?chat=thanks">
+
+                <div class="chat-form-step" id="step1">
+                    <input type="text" name="Name" placeholder="Your Name *" required>
+                    <button type="button" class="chat-next" data-next="step2">Next →</button>
+                </div>
+                <div class="chat-form-step" id="step2" style="display:none;">
+                    <input type="tel" name="Contact Number" placeholder="Phone Number *" required>
+                    <button type="button" class="chat-next" data-next="step3">Next →</button>
+                </div>
+                <div class="chat-form-step" id="step3" style="display:none;">
+                    <select name="Looking For" required>
+                        <option value="">Select Service *</option>
+                        <option value="Website Development">Website Development</option>
+                        <option value="Mobile App Development">Mobile App Development</option>
+                        <option value="SEO & SMO">SEO & Social Media</option>
+                        <option value="IT Training">IT Training</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <button type="button" class="chat-next" data-next="step4">Next →</button>
+                </div>
+                <div class="chat-form-step" id="step4" style="display:none;">
+                    <textarea name="Message" rows="3" placeholder="Tell us more about your requirement..." required></textarea>
+                    <button type="submit" class="chat-submit">
+                        <i class="fas fa-paper-plane"></i> Send Enquiry
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get a free consultation from Code Vedic IT Solutions. Expert website development, mobile apps, SEO & IT training. Start your digital journey today.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.codevedic.in/landing.html">
+    <title>Get Started Free | Code Vedic IT Solutions</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="landing-page">
+    <canvas id="particle-canvas"></canvas>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Code Vedic" class="logo-img">
+                <span class="logo-text">Code Vedic</span>
+            </a>
+            <a href="https://wa.me/918893891603" class="btn btn-primary" style="padding:10px 20px;font-size:0.9rem;" target="_blank">
+                <i class="fab fa-whatsapp"></i> Chat Now
+            </a>
+        </div>
+    </nav>
+
+    <section class="lp-hero">
+        <div class="hero-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="lp-grid">
+                <div>
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span>
+                        Free Consultation • No Obligation
+                    </div>
+                    <h1 class="hero-title" style="text-align:left;font-size:clamp(2rem,4.5vw,3.2rem);">
+                        Ready to Grow Your<br>
+                        <span class="gradient-text">Business Online?</span>
+                    </h1>
+                    <p class="hero-subtitle" style="text-align:left;margin:0 0 28px;">
+                        Tell us your goal — website, mobile app, SEO or training. We’ll reply within 24 hours with a clear plan and honest pricing.
+                    </p>
+                    <div class="hero-stats" style="justify-content:flex-start;margin-bottom:28px;">
+                        <div class="stat-item">
+                            <div class="stat-number" style="font-size:1.8rem;">100%</div>
+                            <div class="stat-label">Client Focused</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number" style="font-size:1.8rem;">24h</div>
+                            <div class="stat-label">Response Time</div>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <div class="stat-number" style="font-size:1.8rem;">Free</div>
+                            <div class="stat-label">Consultation</div>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:10px;color:var(--text-muted);font-size:0.9rem;">
+                        <i class="fas fa-check-circle" style="color:#22c55e;"></i>
+                        No spam. No pressure. Just helpful advice.
+                    </div>
+                </div>
+
+                <div class="lp-form-card">
+                    <h2>Get Your Free Consultation</h2>
+                    <p class="lp-form-sub">Fill the form and we’ll contact you shortly</p>
+                    <form action="https://formsubmit.co/codevedicbhr@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Landing Page Enquiry - Code Vedic">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://www.codevedic.in/?thanks=1">
+
+                        <div class="lp-form-group">
+                            <label>Full Name *</label>
+                            <input type="text" name="Name" required placeholder="Your name">
+                        </div>
+                        <div class="lp-form-row">
+                            <div class="lp-form-group">
+                                <label>Phone *</label>
+                                <input type="tel" name="Phone" required placeholder="Phone number">
+                            </div>
+                            <div class="lp-form-group">
+                                <label>Email</label>
+                                <input type="email" name="Email" placeholder="Optional">
+                            </div>
+                        </div>
+                        <div class="lp-form-group">
+                            <label>I’m interested in *</label>
+                            <select name="Service" required>
+                                <option value="">Select service</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="SEO & SMO">SEO & Social Media</option>
+                                <option value="IT Training">IT Training</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="lp-form-group">
+                            <label>Message</label>
+                            <textarea name="Message" rows="3" placeholder="Briefly describe your requirement..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Submit & Get Free Call</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" style="padding:40px 0;">
+        <div class="container">
+            <div class="footer-bottom" style="border:none;padding:0;">
+                <p>© 2026 Code Vedic IT Solutions</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="terms.html">Terms</a>
+                    <a href="index.html">Main Website</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/918893891603" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
